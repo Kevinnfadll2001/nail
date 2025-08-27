@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nailed by E’ — Services</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    /* HEADER */
+    header {
+      background-color: white;
+      padding: 10px 10px;
+      text-align: center;
+    }
+    
+    .logo {
+      width: 900px;  /* adjust size as needed */
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* MAIN SECTION */
+    section {
+      padding: 20px;
+      background-color: pink;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 700px;
+    }
+
+    .service {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: white;
+    }
+
+    .service h2 {
+      margin-top: 0;
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer-text p {
+      margin: 5px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 20px; /* space between QR and buttons */
+      margin-top: 10px;
+      flex-wrap: wrap; /* allow wrapping on small screens */
+    }
+
+    .footer-buttons {
+      display: flex;
+      flex-direction: column; /* stack buttons vertically */
+      gap: 10px;
+    }
+
+    .whatsapp-button,
+    .call-button {
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .whatsapp-button {
+      background-color: lightpink;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #ff85a2;
+    }
+
+    .call-button {
+      background-color: lightpink;
+    }
+
+    .call-button:hover {
+      background-color:  #ff85a2;
+    }
+
+    .footer-content img {
+      width: 100px;
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Logo" class="logo">
+</header>
+
+<section>
+  <div class="service">
+    <h2>Nail Care</h2>
+    <ul>
+      <li><span>Pose</span><span>5 $</span></li>
+      <li><span>Russian Manicure</span><span>10 $</span></li>
+      <li><span>Russian Pedicure</span><span>10 $</span></li>
+      <li><span>Full Set Gel + Gel Color</span><span>30 $</span></li>
+      <li><span>Refill + Gel Color</span><span>20 $</span></li>
+      <li><span>Rubber Base + Gel Color</span><span>20 $</span></li>
+      <li><span>Manicure + Gel Color</span><span>15 $</span></li>
+      <li><span>Pedicure + Gel Color</span><span>15 $</span></li>
+      <li><span>Fake Nails</span><span>7 $</span></li>
+      <li><span>Design</span><span>1 $</span></li>
+      <li><span>French / Ombre</span><span>4 $</span></li>
+      <li><span>Remove Gelish</span><span>3 $</span></li>
+      <li><span>Remove Gel</span><span>5 $</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-text">
+    <p>© Nailed by E’</p>
+    
+  </div>
+
+  <div class="footer-content">
+    <a href="https://www.instagram.com/_.nailedd.by_e_?igsh=MWU2bDRrMzlld25seg==" target="_blank">
+    <img src="qr.jpg" alt="QR code">
+  </a>
+    <div class="footer-buttons">
+      <button class="whatsapp-button" onclick="goToChat()">Book Now</button>
+      <button class="call-button" onclick="callNumber()">Call Now</button>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function goToChat() {
+    window.open("https://wa.me/76012823", "_blank");
+  }
+
+  function callNumber() {
+    window.location.href = "tel:76012823";
+  }
+</script>
+
+</body>
+</html>
